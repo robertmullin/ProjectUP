@@ -1,0 +1,293 @@
+/*
+
+
+
+    font-family: 'Cabin', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* SHARE ICONS */
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 5em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    transition: top 0.3s;
+    z-index: 2;
+    font-family: 'Rubik', sans-serif;
+}
+
+.share {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em
+}
+
+.fa {
+    padding: 1em;
+    font-size: 2em;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    list-style: none;
+    padding: .5em;
+}
+
+.navUL {
+    width: 30%;
+}
+
+.navLinks {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #adadad;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.navLinks:hover {
+    color: #fff;
+}
+
+.image1 {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    filter: blur(20px) grayscale(20%);
+}
+
+.infoCard {
+    display: flex;
+    width: 300px;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 0;
+    position: absolute;
+    top: 250px;
+    left: 75px;
+    background-color: #CDE7E1;
+    padding: 1em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.infoCard p {
+    padding: 1em 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+}
+
+.aboutArticle {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/oceanmin.jpg);
+    background-position: 50% 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.aboutArticle:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.aboutCard {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    background-color: #CDE7E1;
+    padding: 2em 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+}
+
+.background {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: url("img/water2mincopy.jpg") 50% 50% no-repeat fixed;;
+    padding: 20rem;
+    text-align: center;
+    z-index: -1;
+}
+
+.reveal {
+    z-index: -1;
+    position: absolute;
+    top: calc(50% - 10rem);
+    left: calc(50% - 10rem);
+    width: 20rem;
+    height: 20rem;
+    background: url("img/water2minCursive.jpg") 50% 50% no-repeat fixed;
+    border-radius: 50%;
+    background-size: cover;
+    -webkit-mask-image: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 36%, rgba(255, 255, 255, 0) 90%);
+}
+
+.faqArticle {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/radiostation.jpg);
+    background-position: 50% 0;
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.faqCard {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    background-color: #CDE7E1;
+    padding: 2em 1em;
+    margin: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    z-index: 9;
+}
+
+footer {
+    display: flex;
+    background-color: #000;
+    width: 100%;
+    height: 3.5em;
+    flex-direction: row;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+    padding: 1em;
+    justify-content: space-between;
+    z-index: 9;
+}
+
+footer ul {
+    color: white;
+    font-size: 1.2em;
+}
+
+footer .fa {
+    padding: .5em;
+    font-size: 1em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

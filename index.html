@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Quicksand|Rubik:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Under Pressure</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <ul class="navUL">
+
+                <li><a class="navLinks" href="#home">Home</a></li>
+                <li><a class="navLinks" href="#about">About</a></li>
+                <li><a class="navLinks" href="#faq">FAQ</a></li>
+                <li><a class="navLinks" href="#faq">Contact</a></li>
+
+            </ul>
+
+            <audio loop>
+
+                <source src="img/Breathing_deep_fast.mp3" type="audio/ogg">
+
+            </audio>
+
+            <ul>
+                
+                <li class="share">Share:</li>
+
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                <li>
+
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                <li>
+
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="wrap" id="home" >
+
+            <div class="background">
+                <div class="reveal"></div>
+            </div>
+
+            <div class="infoCard">
+
+                <h1>Under Pressure</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni earum numquam ex quam beatae nemo voluptates, accusamus hic, vero quia ut dicta eos doloribus porro quibusdam, magnam odit facilis cumque.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni earum numquam ex quam beatae nemo voluptates, accusamus hic, vero quia ut dicta eos doloribus porro quibusdam, magnam odit facilis cumque.</p>
+
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+
+
+    <main>
+
+
+        <article class="aboutArticle" id="about" >
+
+            <section class="aboutCard">
+
+                <h2>About the author</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+
+            </section>
+
+
+        </article>
+        
+        <article class="faqArticle" id="faq" >
+            
+            <section class="faqCard">
+                
+                <h2>FAQ</h2>
+                <br>
+                <p>Here is a question?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <br>
+                <p>Here is a question?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <br>
+                <p>Here is a question?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                
+            </section>
+            
+            <section class="faqCard">
+                
+                <h2>Contact</h2>
+                <br>
+                <p>We would love to hear from you!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                
+                <p class="emailP">Email to <a href="mailto:example@example.com">example&#64;example.com</a></p>
+                
+            </section>
+            
+        </article>
+        
+        
+
+    <footer>
+
+        <p>Site Title &copy; 2018</p>
+        
+        <ul>
+                
+                <li>Share:</li>
+                
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                <li>
+
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                <li>
+
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+
+            </ul>
+
+    </footer>
+
+    </main>
+
+
+    <script src="main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        $('.aboutArticle').ripples({
+            resolution: 512,
+            dropRadius: 20, //px
+            perturbance: 0.04,
+        });
+    </script>
+
+</body>
+
+</html>
