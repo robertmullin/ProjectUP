@@ -2,28 +2,36 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cabin|Quicksand|Rubik:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Under Pressure</title>
+
 </head>
 
 <body>
 
     <header>
 
-        <nav>
+        <div class="mobileDiv">
+            <a class="mobileMenu" href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <nav id="mainNav">
 
             <ul class="navUL">
-
-                <li><a class="navLinks" href="#home">Home</a></li>
-                <li><a class="navLinks" href="#about">About</a></li>
-                <li><a class="navLinks" href="#faq">FAQ</a></li>
-                <li><a class="navLinks" href="#faq">Contact</a></li>
+                
+                <a class="logo" href="#home"><img src="img/logo3.svg" alt=""></a>
+                <li class="navLinks"><a href="#home">Home</a></li>
+                <li class="navLinks"><a href="#about">About</a></li>
+                <li class="navLinks"><a href="#faq">FAQ</a></li>
+                <li class="navLinks"><a href="#faq">Contact</a></li>
 
             </ul>
 
@@ -33,9 +41,7 @@
 
             </audio>
 
-            <ul>
-
-                <li class="share">Share:</li>
+            <ul class="shareUL">
 
                 <li>
                     <a href="#" class="fa fa-facebook"></a>
@@ -55,7 +61,7 @@
 
 
 
-        <div class="wrap" id="home">
+        <div class="wrap">
 
             <div class="background">
                 <div class="reveal"></div>
@@ -63,10 +69,7 @@
 
             <div class="infoCard">
 
-                <h1>Under Pressure</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni earum numquam ex quam beatae nemo voluptates, accusamus hic, vero quia ut dicta eos doloribus porro quibusdam, magnam odit facilis cumque.</p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni earum numquam ex quam beatae nemo voluptates, accusamus hic, vero quia ut dicta eos doloribus porro quibusdam, magnam odit facilis cumque.</p>
 
             </div>
 
@@ -79,19 +82,36 @@
 
 
     <main>
-
-
+       
         <article class="aboutArticle" id="about">
 
             <section class="aboutCard">
 
-                <h2>About the author</h2>
+                <h2>Under Pressure</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <p>When SCUBA diver and whale-watcher Flynn McConnell takes a marine
+                    research team offshore, her dive mission suddenly turns hellish with
+                    creatures dying and in distress all around her. Returning to the surface
+                    she finds a global catastrophe: the atmosphere is unbreathable. All life
+                    has perished. Is it terrorists, a climate cataclysm?</p>
+
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+
+                <p>With just two air tanks remaining each breath brings Flynn closer to her
+                    own doom. Her doting fiancee is not responding to her urgent calls - nor is
+                    anyone. The global media and social media are silent. Flynn is in a race
+                    against time like no other to survive.</p>
+
                 <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+
+                <p>When she finds a mysterious doctor and a conspiracy theorist, they form
+                    a pact to survive this apocalypse together, and soon their trio becomes
+                    four when they save a 10-year old girl. The survivors, with air tanks in tow,
+                    make a perilous journey to the only sign of life on earth: daily online
+                    activity in the mountains of Montana - but what they discover there is
+                    beyond all belief. Four good souls are pushed to their limits exposing their
+                    own secrets. They each face the question of the value of a single life
+                    versus all life - and what would you do to protect it?</p>
 
             </section>
 
@@ -109,14 +129,20 @@
 
                 <h2>FAQ</h2>
                 <br>
-                <p>Here is a question?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <p><strong>Will Under Pressure be released for sale?</strong></p>
+                <p>Under Pressure will be released for sale at one book shop only per continent. All other copies will find their way to readers at no charge. Will a copy find you?</p>
                 <br>
-                <p>Here is a question?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <p><strong>Is Under Pressure based on a real story?</strong></p>
+                <p>We'll see.</p>
                 <br>
-                <p>Here is a question?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
+                <p><strong>Are Sparticles real?</strong></p>
+                <p>Yes.</p>
+                <br>
+                <p><strong>Who is Christabel H Parker?</strong></p>
+                <p>Christabel H. Parker is an Australian television producer who resides in Canada. C.H. Parker began her career in the national broadcaster working for ABCTV news for six years. She produced successful television series for channels 7 and 9 and is a former Australian Walkley Award Judge (the highest awards in broadcast journalism.) She's filmed huge Outback cattle musters, has filmed with British Royalty, mafia bosses, six Australian Prime Ministers, to filming in prison (four times), toured with military peace keeping forces and big arena rock shows. She became a lobbyist to improve the rights of victims of crime, which saw changes to victims rights laws in Australia. Her paternal grand mother worked for MGM studios. Her father, a naval officer, retained a life long friendship with Douglas Fairbanks Junior, that friendship inspired young Christabel H Parker. She's named after her maternal grand mother Christabel. She's married to Canadian rock musician and inspirational speaker Carl Dixon. She's written three television series currently before North American Networks. Under Pressure, a thriller about the end of the world is her debut novel.</p>
+                <br>
+                <p><strong>Is the character Hilton R Davies based on Donald Trump?</strong></p>
+                <p>Not specifically.</p>
 
             </section>
 
@@ -124,11 +150,8 @@
 
                 <h2>Contact</h2>
                 <br>
-                <p>We would love to hear from you!</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat sunt expedita saepe, esse blanditiis autem. Facilis soluta repellat quia, voluptatum voluptatem minus ipsum alias atque ipsa, molestias quasi accusantium!</p>
-
-                <p class="emailP">Email to <a href="mailto:example@example.com">example&#64;example.com</a></p>
+                <p>We would love to hear from you! Email to <a  class="emailP" href="mailto:example@example.com">example&#64;example.com</a></p>
+                
 
             </section>
 
@@ -140,9 +163,7 @@
 
             <p>Site Title &copy; 2018</p>
 
-            <ul>
-
-                <li>Share:</li>
+            <ul class="footerUL">
 
                 <li>
                     <a href="#" class="fa fa-facebook"></a>
