@@ -36,7 +36,7 @@ body {
 nav {
     display: flex;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1600px;
     height: 5em;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -146,7 +146,8 @@ header {
 
 .wrap {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
@@ -162,7 +163,7 @@ header {
 
 .infoCard {
     display: flex;
-    width: 25%;
+    width: 25em;
     height: 70%;
     z-index: 0;
     position: absolute;
@@ -239,7 +240,7 @@ main {
 
 .faqArticle {
     width: 100%;
-    height: 110%;
+    height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -255,15 +256,15 @@ main {
     top: 50%;
     left: 50%;
     width: 100%;
-    max-width: 1920px;
-    height: auto;
+    max-width: 1600px;
+    height: 100%;
     z-index: -100;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(img/Playful.jpg) no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .faqCard {
@@ -313,6 +314,58 @@ footer .fa {
     display: none;
 }
 
+
+@media screen and (min-width: 1024px) {
+
+    .navUL {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .navLinks {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+        font-size: 2em;
+        height: 2em;
+        width: 2em;
+        color: white;
+    }
+
+    .infoCard {
+        display: flex;
+        width: 40em;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-size: contain;
+    }
+
+    .faqArticle {
+        height: 100%;
+    }
+
+    .background {
+        background-size: cover;
+    }
+
+    #bgvid {
+        background-size: cover;
+        top: 50%;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
 
@@ -349,9 +402,10 @@ footer .fa {
         color: slategrey;
     }
 
-    nav {
+    #mainNav {
         display: none;
         flex-direction: row;
+        justify-content: space-around;
         position: relative;
         width: 100%;
         height: auto;
@@ -364,7 +418,7 @@ footer .fa {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -417,7 +471,7 @@ footer .fa {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
-        
+
     }
 
     main {
@@ -458,13 +512,13 @@ footer .fa {
         text-align: center;
         padding-bottom: 2em;
     }
-    
+
     .faqCard {
         width: 90%;
         margin: auto;
         margin-top: 70%;
     }
-    
+
     .faqCard ~ .faqCard {
         width: 90%;
         margin-top: 1em;
@@ -526,7 +580,7 @@ footer .fa {
     footer p {
         font-size: 1.2em;
     }
-    
+
     .footerUL {
         width: 50%;
     }
