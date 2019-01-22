@@ -1,0 +1,156 @@
+/*
+
+    font-family: 'Cabin', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+
+    font-family: 'Rubik', sans-serif;
+
+*/
+
+header {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal {
+    display: none;
+}
+
+.mobileDiv {
+    width: 100%;
+    background: black;
+}
+
+.mobileMenu {
+    display: block;
+    color: slategrey;
+}
+
+nav {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: black;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    padding: 1em;
+}
+
+.navUL {
+    width: 100%;
+}
+
+.shareUL {
+    display: none;
+}
+
+.navLinks {
+    text-decoration: none;
+    font-size: 2em;
+    color: #adadad;
+    text-transform: uppercase;
+    height: auto;
+    padding: .5em;
+}
+
+.reveal {
+    display: none;
+}
+
+.wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+}
+
+.background {
+    display: none;
+}
+
+.infoCard {
+    width: 90%;
+    position: static;
+    height: auto;
+}
+
+.aboutArticle {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/droneMobileMin.jpg);
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    z-index: auto;
+}
+
+/* SHARE ICONS */
+
+.share {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+}
+
+.fa {
+    padding: .5em;
+    font-size: 2em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: .5em
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+video {
+    display: none;
+}
