@@ -24,6 +24,7 @@ body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    max-width: 1600px; 
 }
 
 body {
@@ -594,11 +595,22 @@ footer .fa {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1800px) {
 
     .wrap {
-        height: 100vh;
+        overflow: hidden;
     }
-
+    
+    .infoCard {
+        
+        overflow: hidden;
+    }
+    
+    #bgvid {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
 
 }
